@@ -4,7 +4,7 @@ from playwright.sync_api import Page, expect
 BASE_URL = "http://localhost:8000"
 
 
-def test_cube(page: Page):
+def test_cube_calculation(page: Page):
     page.goto(BASE_URL)
 
     input_field = page.get_by_placeholder("enter number...")
